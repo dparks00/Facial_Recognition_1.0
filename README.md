@@ -14,7 +14,11 @@ First, start in **precomp.py**.  In this script, we will perform principal compo
 Next, we move on to **dukeAvg.m**.  In this script, we iterate through the images stored in ./data/duke which a series of cropped images of my face. In **dukeAvg.m**, we convert these images to grayscale, resize them to match the images from the *Yale Face Database B*, find the average of the image matrices, and reshape the average image matrix into a vector.
 
 Now, in **isDuke.py**, we will take the average image vector found in **dukeAvg.m**, mean-center it, project it on the rank approximation of the unitary matrix found in **precomp.py**, and this gives us what we'll call *alpha<sub>duke</sub>*.  *alpha* can be thought of as the fingerprint of a face/image, in this case, my face. Faces that are like mine will have similiar *alphas*, so we can use *alpha* to distinguish other people from me.  Additionally, if we multiply *alpha* by the rank approximation of the unitary matrix from **precomp.py** and add back the average face, we will get an approximation of my average face.
+
+![isDuke.py](./results/isDukeOut.png)
+
 >And we can do this for any *alpha* of any image using to same rank-approximated unitary matrix and average face matrix to produce the original image that was used to find *alpha* (we can also tweak our math to exclude the average face matrix).  This is a method of image compression since *alpha* is a lot smaller than the matrix used to make *alpha*, but perhaps more on that in another project.
+
 **isDuke.py** will also take an image, grayscale it, reshape it into a vector, and perform the same operations as it did to the image vector from **dukeAvg.m** to get *alpha<sub>image</sub>*.  We can now compare these to vectors to tell if this is an image of my face or not.
 
 **isDuke.py** performs comparisons in two ways: Mean Absolute Percent Error (MAPE), and Euclidean Distance.
