@@ -39,7 +39,7 @@ If euclidean_distance < 6000, **isDuke.py** will say that it's Duke.
 
 ## Results:
 
-From the graph below, we can see that the MAPE approach yeilds fairly decent results.  This approach is able to recognize Duke very consistently, and is usally able to recognize someone else as not Duke.  However this approach falls short when looking at images of people of similiar characteristics.  This is seen when looking at MAPE values for Robert Pattinson-a white male with dark blonde/light brunette(?) hair and defined jawline such as myself.
+From the graph below, we can see that the MAPE approach yeilds fairly decent results.  This approach is able to recognize Duke very consistently, and is usally able to recognize someone else as not Duke.  However this approach falls short when looking at images of people with similiar characteristics.  This is seen when looking at MAPE values for Robert Pattinson-a white male with dark blonde/light brunette(?) hair and defined jawline such as myself.
 
 ![MAPE results](./results/MAPE.png)
 
