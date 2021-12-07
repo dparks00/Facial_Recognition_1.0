@@ -24,7 +24,7 @@ When using MAPE, we look at a subset of indices in the *alpha* vectors, and calc
 Through testing I found that iterating over indices 7 to 13 yeilds pretty good results.
 
 When using euclidean distance, I discard the first 3 indices of each *alpha* as these components will correspond mostly to lighting and I want this algorithm to recognize me regardless of lighting.  I then want to find euclidean distance using *alpha*\[4:] for each alpha.
-![MAPE](https://www.gstatic.com/education/formulas2/397133473/en/euclidean_distance.svg#gh-light-mode-only)
+![MAPE](https://www.gstatic.com/education/formulas2/397133473/en/euclidean_distance.svg#gh-dark-mode-only)
 
 ## Results:
 
