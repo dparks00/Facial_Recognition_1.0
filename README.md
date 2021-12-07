@@ -9,7 +9,7 @@ A personal project that uses Principal Component Analysis (PCA) and Eigenfaces t
 
 First, start in **precomp.py**.  In this script, we will perform principal component analysis on a the matrix **allFaces.mat** by computing the SVD on the mean-centered matrix of **allFaces.mat** and save the unitary matrix and its rank-800 approximation.
 
-**allFaces.mat** is matrix where every column is the image data of a grayscaled face taken from *Yale Face Database B*. 
+**allFaces.mat** is matrix where every column is the image data of a grayscaled face taken from *Yale Face Database B*. Unfortunately, I couldn't include allFaces.mat in this repository due to size constraints.
 
 Next, we move on to **dukeAvg.m**.  In this script, we iterate through the images stored in ./data/duke which a series of cropped images of my face. In **dukeAvg.m**, we convert these images to grayscale, resize them to match the images from the *Yale Face Database B*, find the average of the image matrices, and reshape the average image matrix into a vector.
 
