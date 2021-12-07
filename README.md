@@ -45,9 +45,11 @@ From the graph below, we can see that the MAPE approach yeilds fairly decent res
 
 ![MAPE results](./results/MAPE.png)
 
-Using euclidean distance yeilds more promising results.  From the data below, we see much less overlap between myself and others, even when they share some similiar characteristics.
+Using euclidean distance yeilds more promising results.  From the data below, we see much less overlap between myself and others, even when they share some similiar characteristics.  Based on the data below, it looks like this method could consistently identify non-Dukes as such and identify Duke as Duke with an acceptable frequency.
 
 ![euc results](./results/eucDist4on.png)
+
+While the above looks promising, we would, of course, need a lot more data before we could make any solid conclusions about its reliability and accuracy.
 
 ## Credit and Thanks:
 While I developed this program independently, I would like to first thank the 'Yale Face Database' and 'Yale Face Database B'.  The images in these databases are what enabled to me create the Eigenfaces that my program relies on.  Additionally, I learned PCA in part from 'Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control' by Dr. Brunton and Dr. Kutz.  This book also very conviently provided me with a matrix of data computed from the 'Yale Face Database B' which I used in my program.  This matrix can be found in 'allFaces.mat' in the Data folder.
