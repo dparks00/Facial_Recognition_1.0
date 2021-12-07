@@ -17,7 +17,7 @@ Now, in **isDuke.py**, we will take the average image vector found in **dukeAvg.
 
 ![isDuke.py](./results/isDukeOut.png)
 
->And we can do this for any *alpha* of any image using to same rank-approximated unitary matrix and average face matrix to produce the original image that was used to find *alpha* (we can also tweak our math to exclude the average face matrix).  This is a method of image compression since *alpha* is a lot smaller than the matrix used to make *alpha*, but perhaps more on that in another project.
+>Interestingly, we can use the *alpha* of any image and the same rank-approximated unitary matrix and average face matrix to produce an approximation of the original image that was used to calculate *alpha* (we can also tweak our math to exclude the average face matrix).  This is a method of image compression since *alpha* is a lot smaller than the matrix used to make *alpha*, but perhaps more on that in another project.
 
 **isDuke.py** will also take an image, grayscale it, reshape it into a vector, and perform the same operations as it did to the image vector from **dukeAvg.m** to get *alpha<sub>image</sub>*.  We can now compare these to vectors to tell if this is an image of my face or not.
 
