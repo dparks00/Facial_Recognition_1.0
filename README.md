@@ -33,7 +33,7 @@ Through testing I found that iterating over indices 7 to 13 yeilds pretty good r
 
 When using euclidean distance, I discard the first 3 indices of each *alpha* as these components will correspond mostly to lighting and I want this algorithm to recognize me regardless of lighting.  I then want to find euclidean distance using *alpha*\[4:] for each alpha. If euclidean_distance < 6000, **isDuke.py** will say that it's Duke. 
 
-![MAPE](https://www.gstatic.com/education/formulas2/397133473/en/euclidean_distance.svg)
+![euclidean_distance](https://www.gstatic.com/education/formulas2/397133473/en/euclidean_distance.svg)
 
 If euclidean_distance < 6000, **isDuke.py** will say that it's Duke. 
 
@@ -41,6 +41,9 @@ If euclidean_distance < 6000, **isDuke.py** will say that it's Duke.
 
 ## Results:
 
+![MAPE results](./results/MAPE.png)
+
+![euc results](./results/eucDist4on.png)
 
 ## Credit and Thanks:
 While I developed this program independently, I would like to first thank the 'Yale Face Database' and 'Yale Face Database B'.  The images in these databases are what enabled to me create the Eigenfaces that my program relies on.  Additionally, I learned PCA in part from 'Data-Driven Science and Engineering: Machine Learning, Dynamical Systems, and Control' by Dr. Brunton and Dr. Kutz.  This book also very conviently provided me with a matrix of data computed from the 'Yale Face Database B' which I used in my program.  This matrix can be found in 'allFaces.mat' in the Data folder.
